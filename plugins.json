@@ -1,0 +1,65 @@
+{
+  "plugins": [
+    {
+      "name": "4WP Icons",
+      "slug": "4wp-icons",
+      "description": "Custom SVG icon system for Gutenberg blocks",
+      "repository": "https://github.com/4wpdev/4wp-icons",
+      "status": "active",
+      "version": "1.0.0",
+      "requires": {
+        "wordpress": "6.0",
+        "php": "8.0"
+      },
+      "tags": ["icons", "svg", "gutenberg", "blocks"]
+    },
+    {
+      "name": "4WP Mega Menu",
+      "slug": "4wp-mega-menu",
+      "description": "Advanced Gutenberg-based mega menu block",
+      "repository": "https://github.com/4wpdev/4wp-mega-menu",
+      "status": "active",
+      "version": "1.0.0",
+      "requires": {
+        "wordpress": "6.0",
+        "php": "8.0"
+      },
+      "tags": ["menu", "navigation", "gutenberg", "mega-menu"]
+    },
+    {
+      "name": "4WP Responsive",
+      "slug": "4wp-responsive",
+      "description": "Responsive utilities and layout helpers",
+      "repository": "https://github.com/4wpdev/4wp-responsive",
+      "status": "active",
+      "version": "1.0.0",
+      "requires": {
+        "wordpress": "6.0",
+        "php": "8.0"
+      },
+      "tags": ["responsive", "utilities", "layout", "css"]
+    },
+    {
+      "name": "4WP FAQ",
+      "slug": "4wp-faq",
+      "description": "Structured FAQ block with schema.org support",
+      "repository": "https://github.com/4wpdev/4wp-faq",
+      "status": "active",
+      "version": "1.0.0",
+      "requires": {
+        "wordpress": "6.0",
+        "php": "8.0"
+      },
+      "tags": ["faq", "schema", "seo", "gutenberg", "structured-data"]
+    }
+  ],
+  "bundle": {
+    "name": "4WP Bundle",
+    "slug": "4wp-bundle",
+    "description": "Core bundle managing shared logic, integrations, and future add-ons",
+    "repository": "https://github.com/4wpdev/4wp-bundle",
+    "status": "active",
+    "version": "1.0.0"
+  },
+  "lastUpdated": "2024-01-01"
+}
