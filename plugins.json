@@ -1,12 +1,25 @@
 {
   "plugins": [
     {
+      "name": "4WP QL Blocks",
+      "slug": "4wp-ql-blocks",
+      "description": "Query Loop integration with Search and Taxonomy filters for WordPress",
+      "repository": "https://github.com/4wpdev/4wp-ql-blocks",
+      "status": "active",
+      "version": "0.1.10",
+      "requires": {
+        "wordpress": "6.0",
+        "php": "8.0"
+      },
+      "tags": ["query-loop", "search", "taxonomy", "filters", "gutenberg", "woocommerce"]
+    },
+    {
       "name": "4WP Icons",
       "slug": "4wp-icons",
       "description": "Custom SVG icon system for Gutenberg blocks",
       "repository": "https://github.com/4wpdev/4wp-icons",
       "status": "active",
-      "version": "1.0.0",
+      "version": "0.2.3",
       "requires": {
         "wordpress": "6.0",
         "php": "8.0"
@@ -32,7 +45,7 @@
       "description": "Responsive utilities and layout helpers",
       "repository": "https://github.com/4wpdev/4wp-responsive",
       "status": "active",
-      "version": "1.0.0",
+      "version": "0.1.0",
       "requires": {
         "wordpress": "6.0",
         "php": "8.0"
@@ -45,7 +58,7 @@
       "description": "Structured FAQ block with schema.org support",
       "repository": "https://github.com/4wpdev/4wp-faq",
       "status": "active",
-      "version": "1.0.0",
+      "version": "0.1.1",
       "requires": {
         "wordpress": "6.0",
         "php": "8.0"
@@ -59,7 +72,7 @@
     "description": "Core bundle managing shared logic, integrations, and future add-ons",
     "repository": "https://github.com/4wpdev/4wp-bundle",
     "status": "active",
-    "version": "1.0.0"
+    "version": "1.0.1"
   },
-  "lastUpdated": "2024-01-01"
+  "lastUpdated": "2026-02-13"
 }
