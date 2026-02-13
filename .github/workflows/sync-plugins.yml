@@ -1,0 +1,56 @@
+name: Sync Plugins from GitHub
+
+on:
+  schedule:
+    # Runs daily at 2:00 UTC
+    - cron: '0 2 * * *'
+  workflow_dispatch:
+    # Allows manual run
+    inputs:
+      force:
+        description: 'Force update even if version change is minor'
+        required: false
+        default: 'false'
+
+jobs:
+  sync:
+    name: Sync Plugins
+    runs-on: ubuntu-latest
+    
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+          fetch-depth: 0
+      
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+          cache: 'npm'
+      
+      - name: Run sync script
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        working-directory: 4wpdev
+        run: |
+          node sync-plugins.js
+      
+      - name: Check for changes
+        id: changes
+        run: |
+          if [ -n "$(git status --porcelain)" ]; then
+            echo "has_changes=true" >> $GITHUB_OUTPUT
+          else
+            echo "has_changes=false" >> $GITHUB_OUTPUT
+          fi
+      
+      - name: Commit changes
+        if: steps.changes.outputs.has_changes == 'true'
+        run: |
+          git config --local user.email "action@github.com"
+          git config --local user.name "GitHub Action"
+          git add plugins.json
+          git commit -m "chore: auto-sync plugins from GitHub releases [skip ci]"
+          git push
