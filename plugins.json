@@ -19,7 +19,8 @@
         "gutenberg",
         "woocommerce"
       ],
-      "inBundle": false
+      "inBundle": false,
+      "documentation_url": "https://4wp.dev/plugin/4wp-ql-blocks/"
     },
     {
       "name": "4WP Icons",
@@ -38,7 +39,8 @@
         "gutenberg",
         "blocks"
       ],
-      "inBundle": false
+      "inBundle": false,
+      "documentation_url": "https://4wp.dev/plugin/4wp-icons/"
     },
     {
       "name": "4WP Mega Menu",
@@ -57,7 +59,8 @@
         "gutenberg",
         "mega-menu"
       ],
-      "inBundle": false
+      "inBundle": false,
+      "documentation_url": "https://4wp.dev/plugin/4wp-mega-menu/"
     },
     {
       "name": "4WP Responsive",
@@ -76,7 +79,8 @@
         "layout",
         "css"
       ],
-      "inBundle": false
+      "inBundle": false,
+      "documentation_url": "https://4wp.dev/plugin/4wp-responsive/"
     },
     {
       "name": "4WP FAQ",
@@ -96,7 +100,31 @@
         "gutenberg",
         "structured-data"
       ],
-      "inBundle": false
+      "inBundle": false,
+      "documentation_url": "https://4wp.dev/plugin/4wp-faq/"
+    },
+    {
+      "name": "4WP Advanced Code",
+      "slug": "4wp-advanced-code",
+      "description": "The ultimate SEO & UX-enhanced Code Block for WordPress. Extends core/code blocks with syntax highlighting, copy/share functionality, and JSON-LD structured data.",
+      "repository": "https://github.com/4wpdev/4wp-advanced-code",
+      "status": "active",
+      "version": "0.1.0",
+      "requires": {
+        "wordpress": "6.0",
+        "php": "8.0"
+      },
+      "tags": [
+        "blocks",
+        "code",
+        "syntax-highlighting",
+        "seo",
+        "gutenberg",
+        "developer",
+        "json-ld"
+      ],
+      "inBundle": false,
+      "documentation_url": "https://4wp.dev/plugin/4wp-advanced-code/"
     }
   ],
   "bundle": {
