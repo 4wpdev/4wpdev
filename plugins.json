@@ -125,6 +125,30 @@
       ],
       "inBundle": false,
       "documentation_url": "https://4wp.dev/plugin/4wp-advanced-code/"
+    },
+    {
+      "name": "4WP Auth",
+      "slug": "4wp-auth",
+      "description": "Social authentication plugin for WordPress - Gmail, Facebook, Instagram, TikTok. Self-hosted OAuth 2.0 authentication with REST API support.",
+      "repository": "https://github.com/4wpdev/4wp-auth",
+      "status": "active",
+      "version": "1.0.2",
+      "requires": {
+        "wordpress": "6.0",
+        "php": "8.0"
+      },
+      "tags": [
+        "authentication",
+        "oauth",
+        "social-login",
+        "gmail",
+        "facebook",
+        "instagram",
+        "tiktok",
+        "rest-api"
+      ],
+      "inBundle": false,
+      "documentation_url": "https://4wp.dev/plugin/4wp-auth/"
     }
   ],
   "bundle": {

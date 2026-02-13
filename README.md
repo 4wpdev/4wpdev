@@ -54,6 +54,7 @@ We maintain a curated collection of modular plugins. Each plugin is designed to 
 | **4WP Responsive** | Responsive utilities and layout helpers | [🔗 Repo](https://github.com/4wpdev/4wp-responsive) | ✅ Active |
 | **4WP FAQ** | Structured FAQ block with schema.org support | [🔗 Repo](https://github.com/4wpdev/4wp-faq) | ✅ Active |
 | **4WP Advanced Code** | The ultimate SEO & UX-enhanced Code Block for WordPress. Extends core/code blocks with syntax highlighting, copy/share functionality, and JSON-LD structured data. | [🔗 Repo](https://github.com/4wpdev/4wp-advanced-code) | ✅ Active |
+| **4WP Auth** | Social authentication plugin for WordPress - Gmail, Facebook, Instagram, TikTok. Self-hosted OAuth 2.0 authentication with REST API support. | [🔗 Repo](https://github.com/4wpdev/4wp-auth) | ✅ Active |
 
 
 > 💡 **Tip:** The complete plugin list is synced with [`plugins.json`](plugins.json) for up-to-date information.  
