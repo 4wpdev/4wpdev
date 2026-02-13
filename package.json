@@ -6,7 +6,9 @@
   "scripts": {
     "sync": "node sync-plugins.js",
     "sync:minor": "MIN_VERSION_CHANGE=minor node sync-plugins.js",
-    "sync:major": "MIN_VERSION_CHANGE=major node sync-plugins.js"
+    "sync:major": "MIN_VERSION_CHANGE=major node sync-plugins.js",
+    "generate:readme": "node generate-readme.js",
+    "sync:full": "node sync-plugins.js && node generate-readme.js"
   },
   "keywords": [
     "wordpress",

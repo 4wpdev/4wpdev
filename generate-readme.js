@@ -1,4 +1,36 @@
-<div align="center">
+#!/usr/bin/env node
+
+/**
+ * Generate README.md from plugins.json
+ * 
+ * Automatically generates README with up-to-date plugin list
+ */
+
+const fs = require('fs');
+const path = require('path');
+
+const pluginsJsonPath = path.join(__dirname, 'plugins.json');
+const readmePath = path.join(__dirname, 'README.md');
+
+// Read plugins.json
+const pluginsData = JSON.parse(fs.readFileSync(pluginsJsonPath, 'utf8'));
+
+// Generate plugins table
+function generatePluginsTable(plugins) {
+  let table = '| Plugin | Description | Repository | Status |\n';
+  table += '|--------|-------------|------------|--------|\n';
+  
+  plugins.forEach(plugin => {
+    const repoName = plugin.repository.split('/').pop();
+    const status = plugin.status === 'active' ? '✅ Active' : '⏸️ Inactive';
+    table += `| **${plugin.name}** | ${plugin.description} | [🔗 Repo](${plugin.repository}) | ${status} |\n`;
+  });
+  
+  return table;
+}
+
+// Generate README content
+const readmeContent = `<div align="center">
 
 # 🚀 4WP.dev
 
@@ -36,9 +68,9 @@
 
 The heart of the ecosystem — manages shared logic, integrations, and future add-ons.
 
-[![Repository](https://img.shields.io/badge/📦-4wp--bundle-00a0d2?style=flat-square)](https://github.com/4wpdev/4wp-bundle)
+[![Repository](https://img.shields.io/badge/📦-4wp--bundle-00a0d2?style=flat-square)](${pluginsData.bundle.repository})
 [![GitHub Stars](https://img.shields.io/github/stars/4wpdev/4wp-bundle?style=flat-square&logo=github)](https://github.com/4wpdev/4wp-bundle)
-[![Version](https://img.shields.io/badge/version-1.0.3-blue?style=flat-square)](https://github.com/4wpdev/4wp-bundle/releases)
+[![Version](https://img.shields.io/badge/version-${pluginsData.bundle.version}-blue?style=flat-square)](${pluginsData.bundle.repository}/releases)
 
 ---
 
@@ -46,18 +78,10 @@ The heart of the ecosystem — manages shared logic, integrations, and future ad
 
 We maintain a curated collection of modular plugins. Each plugin is designed to work independently or integrated through the **4WP Bundle**.
 
-| Plugin | Description | Repository | Status |
-|--------|-------------|------------|--------|
-| **4WP QL Blocks** | Query Loop integration with Search and Taxonomy filters for WordPress | [🔗 Repo](https://github.com/4wpdev/4wp-ql-blocks) | ✅ Active |
-| **4WP Icons** | Custom SVG icon system for Gutenberg blocks | [🔗 Repo](https://github.com/4wpdev/4wp-icons) | ✅ Active |
-| **4WP Mega Menu** | Advanced Gutenberg-based mega menu block | [🔗 Repo](https://github.com/4wpdev/4wp-mega-menu) | ✅ Active |
-| **4WP Responsive** | Responsive utilities and layout helpers | [🔗 Repo](https://github.com/4wpdev/4wp-responsive) | ✅ Active |
-| **4WP FAQ** | Structured FAQ block with schema.org support | [🔗 Repo](https://github.com/4wpdev/4wp-faq) | ✅ Active |
-| **4WP Advanced Code** | The ultimate SEO & UX-enhanced Code Block for WordPress. Extends core/code blocks with syntax highlighting, copy/share functionality, and JSON-LD structured data. | [🔗 Repo](https://github.com/4wpdev/4wp-advanced-code) | ✅ Active |
+${generatePluginsTable(pluginsData.plugins)}
 
-
-> 💡 **Tip:** The complete plugin list is synced with [`plugins.json`](plugins.json) for up-to-date information.  
-> 📅 **Last updated:** 2026-02-13
+> 💡 **Tip:** The complete plugin list is synced with [\`plugins.json\`](plugins.json) for up-to-date information.  
+> 📅 **Last updated:** ${pluginsData.lastUpdated}
 
 ---
 
@@ -84,14 +108,14 @@ Our plugins follow a consistent architecture that ensures quality, maintainabili
 ### Quick Start
 
 1. **Explore Plugins**  
-   Check out our [`plugins.json`](plugins.json) to see all available plugins.
+   Check out our [\`plugins.json\`](plugins.json) to see all available plugins.
 
 2. **Install Core Bundle** (Optional)  
    Install the **4WP Bundle** if you want integrated functionality across plugins.
-   ```bash
+   \`\`\`bash
    # Via Composer
    composer require 4wpdev/4wp-bundle
-   ```
+   \`\`\`
 
 3. **Add Plugins**  
    Install only the plugins you need. All plugins work out-of-the-box!
@@ -99,7 +123,7 @@ Our plugins follow a consistent architecture that ensures quality, maintainabili
 ### Installation Options
 
 - **WordPress Admin** — Upload via Plugins → Add New
-- **Composer** — `composer require 4wpdev/[plugin-name]`
+- **Composer** — \`composer require 4wpdev/[plugin-name]\`
 - **Git** — Clone directly from GitHub repositories
 
 ---
@@ -113,12 +137,12 @@ We use an automated sync system to keep plugin versions up-to-date from GitHub r
 The sync script automatically:
 - ✅ Checks latest releases/tags from GitHub
 - ✅ Detects version changes (1.1.0 → 1.2.0)
-- ✅ Updates `plugins.json` automatically
+- ✅ Updates \`plugins.json\` automatically
 - ✅ Supports GitHub Topics for bundle inclusion
 
 ### Example Output
 
-```bash
+\`\`\`bash
 $ node sync-plugins.js
 
 🔄 Starting plugins sync...
@@ -144,17 +168,17 @@ $ node sync-plugins.js
   - Bundle: 1.0.2 → 1.0.3
 
 ✨ All plugins are up to date!
-```
+\`\`\`
 
 ### Regenerate README
 
 After syncing plugins, regenerate README to reflect latest changes:
 
-```bash
+\`\`\`bash
 npm run generate:readme
 # or
 node generate-readme.js
-```
+\`\`\`
 
 For more details, see [SYNC-README.md](SYNC-README.md).
 
@@ -226,9 +250,9 @@ Stay updated with 4WP across all platforms:
 
 All 4WP plugins are **MIT licensed**. Use freely, contribute, or fork as needed.
 
-```
+\`\`\`
 MIT License - feel free to use in personal or commercial projects.
-```
+\`\`\`
 
 ---
 
@@ -239,3 +263,10 @@ MIT License - feel free to use in personal or commercial projects.
 [⬆ Back to Top](#-4wpdev)
 
 </div>
+`;
+
+// Write README
+fs.writeFileSync(readmePath, readmeContent, 'utf8');
+console.log('✅ README.md generated successfully!');
+console.log(`📦 ${pluginsData.plugins.length} plugins included`);
+console.log(`📅 Last updated: ${pluginsData.lastUpdated}`);

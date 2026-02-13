@@ -37,6 +37,11 @@ jobs:
         run: |
           node sync-plugins.js
       
+      - name: Generate README
+        working-directory: 4wpdev
+        run: |
+          node generate-readme.js
+      
       - name: Check for changes
         id: changes
         run: |
@@ -51,6 +56,6 @@ jobs:
         run: |
           git config --local user.email "action@github.com"
           git config --local user.name "GitHub Action"
-          git add plugins.json
-          git commit -m "chore: auto-sync plugins from GitHub releases [skip ci]"
+          git add plugins.json README.md
+          git commit -m "chore: auto-sync plugins and regenerate README [skip ci]"
           git push
