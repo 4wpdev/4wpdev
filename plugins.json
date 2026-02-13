@@ -149,6 +149,51 @@
       ],
       "inBundle": false,
       "documentation_url": "https://4wp.dev/plugin/4wp-auth/"
+    },
+    {
+      "name": "4WP MCP Abilities",
+      "slug": "4wp-mcp-abilities",
+      "description": "MCP abilities for admin content operations. Minimal abilities provider for WordPress MCP Adapter with create/update post capabilities.",
+      "repository": "https://github.com/4wpdev/4wp-mcp-abilities",
+      "status": "active",
+      "version": "0.2.1",
+      "requires": {
+        "wordpress": "6.0",
+        "php": "8.0"
+      },
+      "tags": [
+        "mcp",
+        "abilities",
+        "admin",
+        "content",
+        "api",
+        "automation"
+      ],
+      "inBundle": false,
+      "documentation_url": "https://4wp.dev/plugin/4wp-mcp-abilities/"
+    },
+    {
+      "name": "LMS4WP",
+      "slug": "lms4wp",
+      "description": "LMS platform for learning your favorite programming language. WordPress plugin for educational courses and skill development with WooCommerce integration and MCP support.",
+      "repository": "https://github.com/4wpdev/lms4wp",
+      "status": "active",
+      "version": "1.10.0",
+      "requires": {
+        "wordpress": "6.0",
+        "php": "8.0"
+      },
+      "tags": [
+        "lms",
+        "learning",
+        "courses",
+        "education",
+        "woocommerce",
+        "mcp",
+        "ai"
+      ],
+      "inBundle": false,
+      "documentation_url": "https://4wp.dev/plugin/lms4wp/"
     }
   ],
   "bundle": {
