@@ -133,7 +133,7 @@
     "description": "Core bundle managing shared logic, integrations, and future add-ons",
     "repository": "https://github.com/4wpdev/4wp-bundle",
     "status": "active",
-    "version": "1.0.2"
+    "version": "1.0.3"
   },
   "lastUpdated": "2026-02-13"
 }
