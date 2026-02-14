@@ -104,6 +104,32 @@
       "documentation_url": "https://4wp.dev/plugin/4wp-faq/"
     },
     {
+      "name": "4WP SEO",
+      "slug": "4wp-seo",
+      "description": "Internal SEO plugin with Schema.org, Google Search Console, and LLMS.txt modules",
+      "repository": "https://github.com/4wpdev/4wp-seo",
+      "status": "active",
+      "version": "0.1.0",
+      "requires": {
+        "wordpress": "5.0",
+        "php": "8.0"
+      },
+      "tags": [
+        "seo",
+        "schema",
+        "schema.org",
+        "techarticle",
+        "llms.txt",
+        "gsc",
+        "google-search-console",
+        "structured-data",
+        "json-ld",
+        "cross-posting"
+      ],
+      "inBundle": false,
+      "documentation_url": "https://4wp.dev/plugin/4wp-seo/"
+    },
+    {
       "name": "4WP Advanced Code",
       "slug": "4wp-advanced-code",
       "description": "The ultimate SEO & UX-enhanced Code Block for WordPress. Extends core/code blocks with syntax highlighting, copy/share functionality, and JSON-LD structured data.",
@@ -204,5 +230,5 @@
     "status": "active",
     "version": "1.0.3"
   },
-  "lastUpdated": "2026-02-13"
+  "lastUpdated": "2026-02-14"
 }
