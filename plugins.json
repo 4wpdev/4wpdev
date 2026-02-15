@@ -88,7 +88,7 @@
       "description": "Structured FAQ block with schema.org support",
       "repository": "https://github.com/4wpdev/4wp-faq",
       "status": "active",
-      "version": "0.1.1",
+      "version": "0.2.0",
       "requires": {
         "wordpress": "6.0",
         "php": "8.0"
@@ -230,5 +230,5 @@
     "status": "active",
     "version": "1.0.3"
   },
-  "lastUpdated": "2026-02-14"
+  "lastUpdated": "2026-02-15"
 }

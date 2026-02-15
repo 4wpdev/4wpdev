@@ -61,7 +61,7 @@ We maintain a curated collection of modular plugins. Each plugin is designed to 
 
 
 > 💡 **Tip:** The complete plugin list is synced with [`plugins.json`](plugins.json) for up-to-date information.  
-> 📅 **Last updated:** 2026-02-14
+> 📅 **Last updated:** 2026-02-15
 
 ---
 
