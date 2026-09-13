@@ -1,12 +1,329 @@
 {
   "plugins": [
     {
+      "name": "4WP Account",
+      "slug": "4wp-account",
+      "description": "Membership user account hub — registration, user profile cabinet, email/password and social login, Gutenberg blocks.",
+      "repository": "https://github.com/4wpdev/4wp-account",
+      "status": "active",
+      "version": "1.1.1",
+      "wordpress_org": true,
+      "wordpress_org_url": "https://wordpress.org/plugins/4wp-account/",
+      "download_url": "https://downloads.wordpress.org/plugin/4wp-account.1.1.1.zip",
+      "requires": {
+        "wordpress": "6.4",
+        "php": "8.0"
+      },
+      "tags": [
+        "membership",
+        "user-account",
+        "user-profile",
+        "user-registration",
+        "oauth",
+        "gutenberg"
+      ],
+      "inBundle": true,
+      "documentation_url": "https://4wp.dev/plugin/4wp-account/",
+      "wordpress_org_version": "1.1.1",
+      "active_installs": 0,
+      "wordpress_org_updated": "2026-09-08 3:32pm GMT",
+      "github_version": "1.1.0",
+      "github_version_source": "header"
+    },
+    {
+      "name": "4WP Advanced Code",
+      "slug": "4wp-advanced-code",
+      "description": "Syntax highlighting, copy/share, and SoftwareSourceCode JSON-LD for core/code and Advanced Code blocks.",
+      "repository": "https://github.com/4wpdev/4wp-advanced-code",
+      "status": "active",
+      "version": "1.0.1",
+      "wordpress_org": true,
+      "wordpress_org_url": "https://wordpress.org/plugins/4wp-advanced-code/",
+      "download_url": "https://downloads.wordpress.org/plugin/4wp-advanced-code.1.0.1.zip",
+      "requires": {
+        "wordpress": "6.4",
+        "php": "7.4"
+      },
+      "tags": [
+        "code",
+        "syntax-highlighting",
+        "gutenberg",
+        "json-ld",
+        "developer"
+      ],
+      "inBundle": true,
+      "documentation_url": "https://4wp.dev/plugin/4wp-advanced-code/",
+      "wordpress_org_version": "1.0.1",
+      "active_installs": 0,
+      "wordpress_org_updated": "2026-06-18 5:01pm GMT",
+      "github_version": "1.0.9",
+      "github_version_source": "header"
+    },
+    {
+      "name": "4WP Drive",
+      "slug": "4wp-drive",
+      "description": "Import Google Docs and Markdown from Google Drive or GitHub into WordPress drafts, or update existing posts from Incoming.",
+      "repository": "https://github.com/4wpdev/4wp-drive",
+      "status": "active",
+      "version": "1.5.0",
+      "wordpress_org": true,
+      "wordpress_org_url": "https://wordpress.org/plugins/4wp-drive/",
+      "download_url": "https://downloads.wordpress.org/plugin/4wp-drive.1.5.0.zip",
+      "requires": {
+        "wordpress": "6.4",
+        "php": "7.4"
+      },
+      "tags": [
+        "google-drive",
+        "github",
+        "import",
+        "markdown",
+        "editorial"
+      ],
+      "inBundle": true,
+      "documentation_url": "https://4wp.dev/plugin/4wp-drive/",
+      "wordpress_org_version": "1.5.0",
+      "active_installs": 0,
+      "wordpress_org_updated": "2026-09-09 6:53pm GMT",
+      "github_version": "1.5.0",
+      "github_version_source": "header"
+    },
+    {
+      "name": "4WP FAQ",
+      "slug": "4wp-faq",
+      "description": "FAQ wrapper for Accordion with FAQPage JSON-LD, optional registry, and hub List/Categories blocks.",
+      "repository": "https://github.com/4wpdev/4wp-faq",
+      "status": "active",
+      "version": "2.4.0",
+      "wordpress_org": true,
+      "wordpress_org_url": "https://wordpress.org/plugins/4wp-faq/",
+      "download_url": "https://downloads.wordpress.org/plugin/4wp-faq.2.4.0.zip",
+      "requires": {
+        "wordpress": "6.6",
+        "php": "7.4"
+      },
+      "tags": [
+        "faq",
+        "accordion",
+        "schema",
+        "seo",
+        "gutenberg"
+      ],
+      "inBundle": true,
+      "documentation_url": "https://4wp.dev/plugin/4wp-faq/",
+      "wordpress_org_version": "2.4.0",
+      "active_installs": 0,
+      "wordpress_org_updated": "2026-09-11 10:27am GMT",
+      "github_version": "2.4.0",
+      "github_version_source": "header"
+    },
+    {
+      "name": "4WP Notifications",
+      "slug": "4wp-notifications",
+      "description": "In-app notification inbox: header bell, list page, WooCommerce alerts, and developer hooks/REST.",
+      "repository": "https://github.com/4wpdev/4wp-notifications",
+      "status": "active",
+      "version": "1.2.0",
+      "wordpress_org": true,
+      "wordpress_org_url": "https://wordpress.org/plugins/4wp-notifications/",
+      "download_url": "https://downloads.wordpress.org/plugin/4wp-notifications.1.2.0.zip",
+      "requires": {
+        "wordpress": "6.4",
+        "php": "7.4"
+      },
+      "tags": [
+        "notifications",
+        "inbox",
+        "gutenberg",
+        "woocommerce"
+      ],
+      "inBundle": true,
+      "documentation_url": "https://4wp.dev/plugin/4wp-notifications/",
+      "wordpress_org_version": "1.2.0",
+      "active_installs": 0,
+      "wordpress_org_updated": "2026-06-19 6:45pm GMT",
+      "github_version": "1.3.2",
+      "github_version_source": "header"
+    },
+    {
+      "name": "4WP SEO Helper",
+      "slug": "4wp-seo-helper",
+      "description": "Site-wide SEO inventory with P1–P3 priority lanes and optional Google Search Console workspace.",
+      "repository": "https://github.com/4wpdev/4wp-seo-helper",
+      "status": "active",
+      "version": "2.1.0",
+      "wordpress_org": true,
+      "wordpress_org_url": "https://wordpress.org/plugins/4wp-seo-helper/",
+      "download_url": "https://downloads.wordpress.org/plugin/4wp-seo-helper.2.1.0.zip",
+      "requires": {
+        "wordpress": "6.0",
+        "php": "8.0"
+      },
+      "tags": [
+        "seo",
+        "inventory",
+        "search-console",
+        "yoast",
+        "google"
+      ],
+      "inBundle": true,
+      "documentation_url": "https://4wp.dev/plugin/4wp-seo-helper/",
+      "wordpress_org_version": "2.1.0",
+      "active_installs": 0,
+      "wordpress_org_updated": "2026-08-30 5:40pm GMT",
+      "github_version": "2.2.0",
+      "github_version_source": "header"
+    },
+    {
+      "name": "4WP Smart Link",
+      "slug": "4wp-smart-link",
+      "description": "Make Cover, Group, and Column blocks fully clickable — Query Loop post cards without nested-link hacks.",
+      "repository": "https://github.com/4wpdev/4wp-smart-link",
+      "status": "active",
+      "version": "1.3.0",
+      "wordpress_org": true,
+      "wordpress_org_url": "https://wordpress.org/plugins/4wp-smart-link/",
+      "download_url": "https://downloads.wordpress.org/plugin/4wp-smart-link.1.3.0.zip",
+      "requires": {
+        "wordpress": "6.4",
+        "php": "7.4"
+      },
+      "tags": [
+        "gutenberg",
+        "query-loop",
+        "cover",
+        "link"
+      ],
+      "inBundle": true,
+      "documentation_url": "https://4wp.dev/plugin/4wp-smart-link/",
+      "wordpress_org_version": "1.3.0",
+      "active_installs": 30,
+      "wordpress_org_updated": "2026-09-02 10:07am GMT",
+      "github_version": "1.3.0",
+      "github_version_source": "header"
+    },
+    {
+      "name": "4WP Style Switcher",
+      "slug": "4wp-style-switcher",
+      "description": "Visitor and per-page style variations for block themes, Light/Dark navigation toggle, optional A/B split.",
+      "repository": "https://github.com/4wpdev/4wp-style-switcher",
+      "status": "active",
+      "version": "1.0.1",
+      "wordpress_org": true,
+      "wordpress_org_url": "https://wordpress.org/plugins/4wp-style-switcher/",
+      "download_url": "https://downloads.wordpress.org/plugin/4wp-style-switcher.1.0.1.zip",
+      "requires": {
+        "wordpress": "6.4",
+        "php": "7.4"
+      },
+      "tags": [
+        "block-theme",
+        "style-variations",
+        "theme.json",
+        "dark-mode",
+        "full-site-editing"
+      ],
+      "inBundle": true,
+      "documentation_url": "https://4wp.dev/plugin/4wp-style-switcher/",
+      "wordpress_org_version": "1.0.1",
+      "active_installs": 0,
+      "wordpress_org_updated": "2026-06-14 2:34pm GMT",
+      "github_version": "1.0.1",
+      "github_version_source": "header"
+    },
+    {
+      "name": "4WP TODO",
+      "slug": "4wp-todo",
+      "description": "Team action items as Gutenberg notes — frontend overlay, admin kanban, taxonomies, REST/Integration API.",
+      "repository": "https://github.com/4wpdev/4wp-todo",
+      "status": "active",
+      "version": "1.0.2",
+      "wordpress_org": true,
+      "wordpress_org_url": "https://wordpress.org/plugins/4wp-todo/",
+      "download_url": "https://downloads.wordpress.org/plugin/4wp-todo.1.0.2.zip",
+      "requires": {
+        "wordpress": "6.4",
+        "php": "7.4"
+      },
+      "tags": [
+        "tasks",
+        "notes",
+        "kanban",
+        "team",
+        "project-management"
+      ],
+      "inBundle": true,
+      "documentation_url": "https://4wp.dev/plugin/4wp-todo/",
+      "wordpress_org_version": "1.0.2",
+      "active_installs": 0,
+      "wordpress_org_updated": "2026-09-08 3:37pm GMT",
+      "github_version": "1.0.0",
+      "github_version_source": "tag"
+    },
+    {
+      "name": "4WP Weather",
+      "slug": "4wp-weather",
+      "description": "Live weather Gutenberg block via OpenWeatherMap — server-side API key, templates, optional JSON-LD.",
+      "repository": "https://github.com/4wpdev/4wp-weather",
+      "status": "active",
+      "version": "2.0.0",
+      "wordpress_org": true,
+      "wordpress_org_url": "https://wordpress.org/plugins/4wp-weather/",
+      "download_url": "https://downloads.wordpress.org/plugin/4wp-weather.2.0.0.zip",
+      "requires": {
+        "wordpress": "6.4",
+        "php": "7.4"
+      },
+      "tags": [
+        "weather",
+        "openweathermap",
+        "gutenberg-block"
+      ],
+      "inBundle": true,
+      "documentation_url": "https://4wp.dev/plugin/4wp-weather/",
+      "wordpress_org_version": "2.0.0",
+      "active_installs": 0,
+      "wordpress_org_updated": "2026-06-08 3:11pm GMT",
+      "github_version": "2.0.0",
+      "github_version_source": "header"
+    },
+    {
+      "name": "4WP Booking",
+      "slug": "4wp-booking",
+      "description": "Appointment booking with pluggable providers (ClinicCards live), Gutenberg block, shortcode, email/Telegram notifications.",
+      "repository": "https://github.com/4wpdev/4wp-booking",
+      "status": "active",
+      "version": "0.4.1",
+      "wordpress_org": true,
+      "wordpress_org_url": "https://wordpress.org/plugins/4wp-booking/",
+      "download_url": "https://downloads.wordpress.org/plugin/4wp-booking.0.4.1.zip",
+      "requires": {
+        "wordpress": "6.4",
+        "php": "7.4"
+      },
+      "tags": [
+        "booking",
+        "appointments",
+        "calendar",
+        "gutenberg",
+        "telegram"
+      ],
+      "inBundle": true,
+      "documentation_url": "https://4wp.dev/plugin/4wp-booking/",
+      "wordpress_org_version": "0.4.1",
+      "active_installs": 0,
+      "wordpress_org_updated": "2026-09-13 10:53am GMT",
+      "github_version": "0.4.0",
+      "github_version_source": "header"
+    },
+    {
       "name": "4WP QL Blocks",
       "slug": "4wp-ql-blocks",
       "description": "Query Loop integration with Search and Taxonomy filters for WordPress",
       "repository": "https://github.com/4wpdev/4wp-ql-blocks",
       "status": "active",
       "version": "0.1.10",
+      "wordpress_org": false,
       "requires": {
         "wordpress": "6.0",
         "php": "8.0"
@@ -20,7 +337,10 @@
         "woocommerce"
       ],
       "inBundle": false,
-      "documentation_url": "https://4wp.dev/plugin/4wp-ql-blocks/"
+      "documentation_url": "https://4wp.dev/plugin/4wp-ql-blocks/",
+      "github_version": "0.1.10",
+      "github_version_source": "header",
+      "download_url": "https://github.com/4wpdev/4wp-ql-blocks/archive/refs/heads/main.zip"
     },
     {
       "name": "4WP Icons",
@@ -29,6 +349,7 @@
       "repository": "https://github.com/4wpdev/4wp-icons",
       "status": "active",
       "version": "0.2.3",
+      "wordpress_org": false,
       "requires": {
         "wordpress": "6.0",
         "php": "8.0"
@@ -40,7 +361,10 @@
         "blocks"
       ],
       "inBundle": false,
-      "documentation_url": "https://4wp.dev/plugin/4wp-icons/"
+      "documentation_url": "https://4wp.dev/plugin/4wp-icons/",
+      "github_version": "0.2.3",
+      "github_version_source": "header",
+      "download_url": "https://github.com/4wpdev/4wp-icons/archive/refs/heads/main.zip"
     },
     {
       "name": "4WP Mega Menu",
@@ -48,7 +372,8 @@
       "description": "Advanced Gutenberg-based mega menu block",
       "repository": "https://github.com/4wpdev/4wp-mega-menu",
       "status": "active",
-      "version": "1.0.0",
+      "version": "1.0.1",
+      "wordpress_org": false,
       "requires": {
         "wordpress": "6.0",
         "php": "8.0"
@@ -60,7 +385,10 @@
         "mega-menu"
       ],
       "inBundle": false,
-      "documentation_url": "https://4wp.dev/plugin/4wp-mega-menu/"
+      "documentation_url": "https://4wp.dev/plugin/4wp-mega-menu/",
+      "github_version": "1.0.1",
+      "github_version_source": "header",
+      "download_url": "https://github.com/4wpdev/4wp-mega-menu/archive/refs/heads/main.zip"
     },
     {
       "name": "4WP Responsive",
@@ -69,6 +397,7 @@
       "repository": "https://github.com/4wpdev/4wp-responsive",
       "status": "active",
       "version": "0.1.0",
+      "wordpress_org": false,
       "requires": {
         "wordpress": "6.0",
         "php": "8.0"
@@ -80,101 +409,10 @@
         "css"
       ],
       "inBundle": false,
-      "documentation_url": "https://4wp.dev/plugin/4wp-responsive/"
-    },
-    {
-      "name": "4WP FAQ",
-      "slug": "4wp-faq",
-      "description": "Structured FAQ block with schema.org support",
-      "repository": "https://github.com/4wpdev/4wp-faq",
-      "status": "active",
-      "version": "0.2.0",
-      "requires": {
-        "wordpress": "6.0",
-        "php": "8.0"
-      },
-      "tags": [
-        "faq",
-        "schema",
-        "seo",
-        "gutenberg",
-        "structured-data"
-      ],
-      "inBundle": false,
-      "documentation_url": "https://4wp.dev/plugin/4wp-faq/"
-    },
-    {
-      "name": "4WP SEO",
-      "slug": "4wp-seo",
-      "description": "Internal SEO plugin with Schema.org, Google Search Console, and LLMS.txt modules",
-      "repository": "https://github.com/4wpdev/4wp-seo",
-      "status": "active",
-      "version": "0.1.0",
-      "requires": {
-        "wordpress": "5.0",
-        "php": "8.0"
-      },
-      "tags": [
-        "seo",
-        "schema",
-        "schema.org",
-        "techarticle",
-        "llms.txt",
-        "gsc",
-        "google-search-console",
-        "structured-data",
-        "json-ld",
-        "cross-posting"
-      ],
-      "inBundle": false,
-      "documentation_url": "https://4wp.dev/plugin/4wp-seo/"
-    },
-    {
-      "name": "4WP Advanced Code",
-      "slug": "4wp-advanced-code",
-      "description": "The ultimate SEO & UX-enhanced Code Block for WordPress. Extends core/code blocks with syntax highlighting, copy/share functionality, and JSON-LD structured data.",
-      "repository": "https://github.com/4wpdev/4wp-advanced-code",
-      "status": "active",
-      "version": "0.1.0",
-      "requires": {
-        "wordpress": "6.0",
-        "php": "8.0"
-      },
-      "tags": [
-        "blocks",
-        "code",
-        "syntax-highlighting",
-        "seo",
-        "gutenberg",
-        "developer",
-        "json-ld"
-      ],
-      "inBundle": false,
-      "documentation_url": "https://4wp.dev/plugin/4wp-advanced-code/"
-    },
-    {
-      "name": "4WP Auth",
-      "slug": "4wp-auth",
-      "description": "Social authentication plugin for WordPress - Gmail, Facebook, Instagram, TikTok. Self-hosted OAuth 2.0 authentication with REST API support.",
-      "repository": "https://github.com/4wpdev/4wp-auth",
-      "status": "active",
-      "version": "1.0.2",
-      "requires": {
-        "wordpress": "6.0",
-        "php": "8.0"
-      },
-      "tags": [
-        "authentication",
-        "oauth",
-        "social-login",
-        "gmail",
-        "facebook",
-        "instagram",
-        "tiktok",
-        "rest-api"
-      ],
-      "inBundle": false,
-      "documentation_url": "https://4wp.dev/plugin/4wp-auth/"
+      "documentation_url": "https://4wp.dev/plugin/4wp-responsive/",
+      "github_version": "0.1.0",
+      "github_version_source": "header",
+      "download_url": "https://github.com/4wpdev/4wp-responsive/archive/refs/heads/main.zip"
     },
     {
       "name": "4WP MCP Abilities",
@@ -183,6 +421,7 @@
       "repository": "https://github.com/4wpdev/4wp-mcp-abilities",
       "status": "active",
       "version": "0.2.1",
+      "wordpress_org": false,
       "requires": {
         "wordpress": "6.0",
         "php": "8.0"
@@ -196,7 +435,10 @@
         "automation"
       ],
       "inBundle": false,
-      "documentation_url": "https://4wp.dev/plugin/4wp-mcp-abilities/"
+      "documentation_url": "https://4wp.dev/plugin/4wp-mcp-abilities/",
+      "github_version": "0.2.1",
+      "github_version_source": "header",
+      "download_url": "https://github.com/4wpdev/4wp-mcp-abilities/archive/refs/heads/main.zip"
     },
     {
       "name": "LMS4WP",
@@ -205,6 +447,7 @@
       "repository": "https://github.com/4wpdev/lms4wp",
       "status": "active",
       "version": "1.10.0",
+      "wordpress_org": false,
       "requires": {
         "wordpress": "6.0",
         "php": "8.0"
@@ -219,7 +462,31 @@
         "ai"
       ],
       "inBundle": false,
-      "documentation_url": "https://4wp.dev/plugin/lms4wp/"
+      "documentation_url": "https://4wp.dev/plugin/lms4wp/",
+      "download_url": "https://github.com/4wpdev/lms4wp/archive/refs/heads/main.zip",
+      "github_version": "1.10.0",
+      "github_version_source": "header"
+    },
+    {
+      "name": "4WP Auth",
+      "slug": "4wp-auth",
+      "description": "Superseded by 4WP Account (social auth lives under the Account hub).",
+      "repository": "https://github.com/4wpdev/4wp-auth",
+      "status": "superseded",
+      "superseded_by": "4wp-account",
+      "version": "1.0.2",
+      "wordpress_org": false,
+      "requires": {
+        "wordpress": "6.0",
+        "php": "8.0"
+      },
+      "tags": [
+        "authentication",
+        "oauth",
+        "social-login"
+      ],
+      "inBundle": false,
+      "documentation_url": "https://4wp.dev/plugin/4wp-account/"
     }
   ],
   "bundle": {
@@ -228,7 +495,16 @@
     "description": "Core bundle managing shared logic, integrations, and future add-ons",
     "repository": "https://github.com/4wpdev/4wp-bundle",
     "status": "active",
-    "version": "1.0.3"
+    "version": "1.0.5",
+    "wordpress_org": false,
+    "github_version": "1.0.5",
+    "github_version_source": "header"
   },
-  "lastUpdated": "2026-02-15"
+  "meta": {
+    "wordpress_org_profile": "https://profiles.wordpress.org/4wpdev/",
+    "version_source": "wordpress_org:true → Stable from api.wordpress.org; else GitHub release/tag/header. github_version kept for drift.",
+    "marker_docs": "docs/wordpress-org-plugins.md",
+    "synced_at": "2026-09-13T13:53:56.615Z"
+  },
+  "lastUpdated": "2026-09-13"
 }

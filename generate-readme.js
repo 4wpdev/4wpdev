@@ -17,15 +17,26 @@ const pluginsData = JSON.parse(fs.readFileSync(pluginsJsonPath, 'utf8'));
 
 // Generate plugins table
 function generatePluginsTable(plugins) {
-  let table = '| Plugin | Description | Repository | Status |\n';
-  table += '|--------|-------------|------------|--------|\n';
-  
-  plugins.forEach(plugin => {
-    const repoName = plugin.repository.split('/').pop();
-    const status = plugin.status === 'active' ? '✅ Active' : '⏸️ Inactive';
-    table += `| **${plugin.name}** | ${plugin.description} | [🔗 Repo](${plugin.repository}) | ${status} |\n`;
-  });
-  
+  let table =
+    '| Plugin | Version | WordPress.org | Repository | Status |\n';
+  table += '|--------|---------|---------------|------------|--------|\n';
+
+  plugins
+    .filter((plugin) => plugin.status !== 'superseded')
+    .forEach((plugin) => {
+      const status =
+        plugin.status === 'active'
+          ? '✅ Active'
+          : plugin.status === 'superseded'
+            ? '♻️ Superseded'
+            : '⏸️ Inactive';
+      const version = plugin.version || '—';
+      const wporg = plugin.wordpress_org
+        ? `[W.org](${plugin.wordpress_org_url || `https://wordpress.org/plugins/${plugin.slug}/`})`
+        : '—';
+      table += `| **${plugin.name}** | \`${version}\` | ${wporg} | [Repo](${plugin.repository}) | ${status} |\n`;
+    });
+
   return table;
 }
 
@@ -78,9 +89,11 @@ The heart of the ecosystem — manages shared logic, integrations, and future ad
 
 We maintain a curated collection of modular plugins. Each plugin is designed to work independently or integrated through the **4WP Bundle**.
 
+Versions for plugins on [WordPress.org (@4wpdev)](https://profiles.wordpress.org/4wpdev/) come from the directory Stable tag; others from GitHub (release / tag / plugin header). Synced by \`sync-plugins.js\`.
+
 ${generatePluginsTable(pluginsData.plugins)}
 
-> 💡 **Tip:** The complete plugin list is synced with [\`plugins.json\`](plugins.json) for up-to-date information.  
+> 💡 **Tip:** The complete plugin list is synced with [\`plugins.json\`](plugins.json). Map notes: [\`docs/wordpress-org-plugins.md\`](docs/wordpress-org-plugins.md).  
 > 📅 **Last updated:** ${pluginsData.lastUpdated}
 
 ---

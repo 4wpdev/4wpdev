@@ -38,7 +38,7 @@ The heart of the ecosystem — manages shared logic, integrations, and future ad
 
 [![Repository](https://img.shields.io/badge/📦-4wp--bundle-00a0d2?style=flat-square)](https://github.com/4wpdev/4wp-bundle)
 [![GitHub Stars](https://img.shields.io/github/stars/4wpdev/4wp-bundle?style=flat-square&logo=github)](https://github.com/4wpdev/4wp-bundle)
-[![Version](https://img.shields.io/badge/version-1.0.3-blue?style=flat-square)](https://github.com/4wpdev/4wp-bundle/releases)
+[![Version](https://img.shields.io/badge/version-1.0.5-blue?style=flat-square)](https://github.com/4wpdev/4wp-bundle/releases)
 
 ---
 
@@ -46,22 +46,31 @@ The heart of the ecosystem — manages shared logic, integrations, and future ad
 
 We maintain a curated collection of modular plugins. Each plugin is designed to work independently or integrated through the **4WP Bundle**.
 
-| Plugin | Description | Repository | Status |
-|--------|-------------|------------|--------|
-| **4WP QL Blocks** | Query Loop integration with Search and Taxonomy filters for WordPress | [🔗 Repo](https://github.com/4wpdev/4wp-ql-blocks) | ✅ Active |
-| **4WP Icons** | Custom SVG icon system for Gutenberg blocks | [🔗 Repo](https://github.com/4wpdev/4wp-icons) | ✅ Active |
-| **4WP Mega Menu** | Advanced Gutenberg-based mega menu block | [🔗 Repo](https://github.com/4wpdev/4wp-mega-menu) | ✅ Active |
-| **4WP Responsive** | Responsive utilities and layout helpers | [🔗 Repo](https://github.com/4wpdev/4wp-responsive) | ✅ Active |
-| **4WP FAQ** | Structured FAQ block with schema.org support | [🔗 Repo](https://github.com/4wpdev/4wp-faq) | ✅ Active |
-| **4WP SEO** | Internal SEO plugin with Schema.org, Google Search Console, and LLMS.txt modules | [🔗 Repo](https://github.com/4wpdev/4wp-seo) | ✅ Active |
-| **4WP Advanced Code** | The ultimate SEO & UX-enhanced Code Block for WordPress. Extends core/code blocks with syntax highlighting, copy/share functionality, and JSON-LD structured data. | [🔗 Repo](https://github.com/4wpdev/4wp-advanced-code) | ✅ Active |
-| **4WP Auth** | Social authentication plugin for WordPress - Gmail, Facebook, Instagram, TikTok. Self-hosted OAuth 2.0 authentication with REST API support. | [🔗 Repo](https://github.com/4wpdev/4wp-auth) | ✅ Active |
-| **4WP MCP Abilities** | MCP abilities for admin content operations. Minimal abilities provider for WordPress MCP Adapter with create/update post capabilities. | [🔗 Repo](https://github.com/4wpdev/4wp-mcp-abilities) | ✅ Active |
-| **LMS4WP** | LMS platform for learning your favorite programming language. WordPress plugin for educational courses and skill development with WooCommerce integration and MCP support. | [🔗 Repo](https://github.com/4wpdev/lms4wp) | ✅ Active |
+Versions for plugins on [WordPress.org (@4wpdev)](https://profiles.wordpress.org/4wpdev/) come from the directory Stable tag; others from GitHub (release / tag / plugin header). Synced by `sync-plugins.js`.
+
+| Plugin | Version | WordPress.org | Repository | Status |
+|--------|---------|---------------|------------|--------|
+| **4WP Account** | `1.1.1` | [W.org](https://wordpress.org/plugins/4wp-account/) | [Repo](https://github.com/4wpdev/4wp-account) | ✅ Active |
+| **4WP Advanced Code** | `1.0.1` | [W.org](https://wordpress.org/plugins/4wp-advanced-code/) | [Repo](https://github.com/4wpdev/4wp-advanced-code) | ✅ Active |
+| **4WP Drive** | `1.5.0` | [W.org](https://wordpress.org/plugins/4wp-drive/) | [Repo](https://github.com/4wpdev/4wp-drive) | ✅ Active |
+| **4WP FAQ** | `2.4.0` | [W.org](https://wordpress.org/plugins/4wp-faq/) | [Repo](https://github.com/4wpdev/4wp-faq) | ✅ Active |
+| **4WP Notifications** | `1.2.0` | [W.org](https://wordpress.org/plugins/4wp-notifications/) | [Repo](https://github.com/4wpdev/4wp-notifications) | ✅ Active |
+| **4WP SEO Helper** | `2.1.0` | [W.org](https://wordpress.org/plugins/4wp-seo-helper/) | [Repo](https://github.com/4wpdev/4wp-seo-helper) | ✅ Active |
+| **4WP Smart Link** | `1.3.0` | [W.org](https://wordpress.org/plugins/4wp-smart-link/) | [Repo](https://github.com/4wpdev/4wp-smart-link) | ✅ Active |
+| **4WP Style Switcher** | `1.0.1` | [W.org](https://wordpress.org/plugins/4wp-style-switcher/) | [Repo](https://github.com/4wpdev/4wp-style-switcher) | ✅ Active |
+| **4WP TODO** | `1.0.2` | [W.org](https://wordpress.org/plugins/4wp-todo/) | [Repo](https://github.com/4wpdev/4wp-todo) | ✅ Active |
+| **4WP Weather** | `2.0.0` | [W.org](https://wordpress.org/plugins/4wp-weather/) | [Repo](https://github.com/4wpdev/4wp-weather) | ✅ Active |
+| **4WP Booking** | `0.4.1` | [W.org](https://wordpress.org/plugins/4wp-booking/) | [Repo](https://github.com/4wpdev/4wp-booking) | ✅ Active |
+| **4WP QL Blocks** | `0.1.10` | — | [Repo](https://github.com/4wpdev/4wp-ql-blocks) | ✅ Active |
+| **4WP Icons** | `0.2.3` | — | [Repo](https://github.com/4wpdev/4wp-icons) | ✅ Active |
+| **4WP Mega Menu** | `1.0.1` | — | [Repo](https://github.com/4wpdev/4wp-mega-menu) | ✅ Active |
+| **4WP Responsive** | `0.1.0` | — | [Repo](https://github.com/4wpdev/4wp-responsive) | ✅ Active |
+| **4WP MCP Abilities** | `0.2.1` | — | [Repo](https://github.com/4wpdev/4wp-mcp-abilities) | ✅ Active |
+| **LMS4WP** | `1.10.0` | — | [Repo](https://github.com/4wpdev/lms4wp) | ✅ Active |
 
 
-> 💡 **Tip:** The complete plugin list is synced with [`plugins.json`](plugins.json) for up-to-date information.  
-> 📅 **Last updated:** 2026-02-15
+> 💡 **Tip:** The complete plugin list is synced with [`plugins.json`](plugins.json). Map notes: [`docs/wordpress-org-plugins.md`](docs/wordpress-org-plugins.md).  
+> 📅 **Last updated:** 2026-09-13
 
 ---
 
