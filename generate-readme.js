@@ -281,5 +281,36 @@ MIT License - feel free to use in personal or commercial projects.
 // Write README
 fs.writeFileSync(readmePath, readmeContent, 'utf8');
 console.log('✅ README.md generated successfully!');
-console.log(`📦 ${pluginsData.plugins.length} plugins included`);
+console.log(`📦 ${pluginsData.plugins.filter((p) => p.status !== 'superseded').length} plugins included`);
 console.log(`📅 Last updated: ${pluginsData.lastUpdated}`);
+
+// Keep organization profile in sync when the sibling .github repo is checked out
+// next to this catalog (…/public/4wpdev + …/public/.github).
+const orgProfilePath = path.join(__dirname, '..', '.github', 'profile', 'README.md');
+if (fs.existsSync(path.dirname(orgProfilePath))) {
+  let profile = readmeContent
+    .replace(
+      /\[`plugins\.json`\]\(plugins\.json\)/g,
+      '[`plugins.json`](https://github.com/4wpdev/4wpdev/blob/main/plugins.json)'
+    )
+    .replace(
+      /\[`docs\/wordpress-org-plugins\.md`\]\(docs\/wordpress-org-plugins\.md\)/g,
+      '[`docs/wordpress-org-plugins.md`](https://github.com/4wpdev/4wpdev/blob/main/docs/wordpress-org-plugins.md)'
+    )
+    .replace(
+      /\(SYNC-README\.md\)/g,
+      '(https://github.com/4wpdev/4wpdev/blob/main/SYNC-README.md)'
+    )
+    .replace(
+      /our \[`plugins\.json`\]\(plugins\.json\)/g,
+      'our [`plugins.json`](https://github.com/4wpdev/4wpdev/blob/main/plugins.json)'
+    );
+  // Getting Started plain link variant from template
+  profile = profile.replace(
+    /Check out our \[`plugins\.json`\]\(plugins\.json\)/g,
+    'Check out our [`plugins.json`](https://github.com/4wpdev/4wpdev/blob/main/plugins.json)'
+  );
+  fs.mkdirSync(path.dirname(orgProfilePath), { recursive: true });
+  fs.writeFileSync(orgProfilePath, profile, 'utf8');
+  console.log(`🏢 Org profile updated: ${orgProfilePath}`);
+}
